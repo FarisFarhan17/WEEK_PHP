@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(blue, rgb(125, 238, 235));
+    margin: 0;
+}
+
+.section {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f3f1f1fd;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#home, #playerForm, #quiz, #result {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 16px;
+}
+
+#liveScore {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#timer {
+    font-weight: bold;
+    color: #e63946;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.answer-option {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.answer-option:hover {
+    background-color: #0056b3;
+}

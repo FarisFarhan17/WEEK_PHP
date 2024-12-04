@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home" class="section">
+        <h1>Selamat datang!!!</h1>
+        <p>Coba mainkan quis ini!</p>
+        <button onclick="showPlayerForm()">Mulai Quiz</button>
+    </section>
+
+    <form action="backend.php" method="POST">
+        <section id="playerForm" class="section hidden">
+            <h2>Masukkan data kamu</h2>
+            <input type="text" id="name" name="name" placeholder="Masukkan Nama" required>
+            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+            <button type="submit">Mulai Quiz</button>
+        </section>
+    </form>
+
+    <!-- <section id="quiz" class="section hidden">
+        <div id="questionContainer">
+            <p id="questionText"></p>
+            <div id="answerOptions"></div>
+        </div>
+        <button onclick="nextQuestion()">Next Question</button>
+        <p id="questionStatus">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></p>
+        <p id="liveScore">Score: <span id="scoreDisplay">0</span></p>
+        <p id="timer">Waktu tersisa: 30 detik</p>
+        
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+    </section>
+
+    <section id="result" class="section hidden">
+        <h2>Quiz Results</h2>
+        <p>Nama: <span id="resultName"></span></p>
+        <p>NIM: <span id="resultNim"></span></p>
+        <p>Total Score: <span id="totalScore"></span></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </section> -->
+
+    <script>
+        function showPlayerForm() {
+            document.getElementById("home").classList.add("hidden");
+            document.getElementById("playerForm").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
